@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ENISo IoT Challenge</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <img src="assets/logo.jpg" alt="Logo ENISo" class="logo-img" />
+          <a href="#" class="logo">ENISo IoT Challenge</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">ACCUEIL</a></li>
+        <li><a href="#package">À PROPOS</a></li>
+        <li><a href="#editions">ÉDITIONS</a></li>
+        <li><a href="#workshops">WORKSHOPS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>5ÈME ÉDITION DU ENISo IoT CHALLENGE</p>
+          <h1>Innovation, Créativité, et Technologie</h1>
+          <div class="header__btns">
+            <button class="btn" onclick="openGoogleForm()">Participez Maintenant</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/LOGO_IOT_BLK.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/aprop1.jpg" alt="showcase" />
+        <img src="assets/aprop3.jpg" alt="showcase" />
+        
+      </div>
+      <div class="showcase__content">
+        <h4>À Propos de l'Événement</h4>
+        <p>
+          « ENISo Internet of Things Challenge» est un événement organisé par L'Ecole Nationale
+          d'Ingénieurs de Sousse qui marque l‘immersion de l'école dans le peloton des avancées
+          technologiques de notre ère. ENISo IOT Challenge est lancée en Avril 2018, elle vise à
+          rassembler des professionnels ,des spécialistes, des industrielles et des étudiants pour
+          discuter et explorer les innovations dans le domaine de l'Internet des objets.
+          
+        </p>
+        <p>
+          Après 4 éditions successives couronnées de succès, l’ENISo Internet of Things Challenge,
+est de retour pour une 5ème édition de L’événement est unique de part sa philosophie:
+des équipes multidisciplinaires qui s'affrontent pour 36 heures afin de concevoir et
+développer un prototype d'un outil exploitant les concepts de l’IoT et les compétences des
+élèves ingénieurs.
+        </p>
+      </div>
+    </section>
+    <section class="section__container editions__container" id="editions">
+      <h2 class="section__header">Éditions Précédentes</h2>
+      <p class="section__description">
+        Découvrez les éditions précédentes et les thèmes innovants qui ont marqué l'histoire de l'ENISo IoT Challenge.
+      </p>
+      <div class="editions__grid">
+        <div class="editions__card">
+          <span><i class="ri-seedling-line"></i></span>
+          <h4>2016 - Smart Agriculture</h4>
+          <p>Intégration des technologies dans l'agriculture pour une gestion optimisée des ressources et une meilleure productivité.</p>
+        </div>
+        <div class="editions__card">
+          
+          <span><i class="ri-building-line"></i></span>
+          <h4>2017 - Smart City</h4>
+          <p>Utilisation des technologies intelligentes pour améliorer les infrastructures urbaines, les transports et les services publics.</p>
+        </div>
+        <div class="editions__card">
+          <span><i class="ri-leaf-line"></i></span>
+          <h4>2018 - Smart Environment</h4>
+          <p>Innovations en matière de gestion des déchets, d'énergie renouvelable et de lutte contre la pollution pour un avenir plus durable.</p>
+        </div>
+        <div class="editions__card">
+          <span><i class="ri-store-3-line"></i></span>
+          <h4>2019 - Smart Retail</h4>
+          <p>Transformation numérique du commerce avec des solutions intelligentes, recommandations basées sur l'IA .</p>
+        </div>
+        </div>
+    </section>
+    <section class="section__container banner__container">
+      <h2 class="section__header">Participants</h2>
+      <p class="banner__description">
+        Cette compétition organisée par l’École Nationale d’Ingénieurs de Sousse a
+        provoqué une nitescence spectaculaire (550 personnes) et une très bonne
+        couverture médiatique.
+      </p>
+      <div class="banner__cards">
+        <div class="banner__card">
+          <h4>500</h4>
+          <p>Étudiants</p>
+        </div>
+        <div class="banner__card">
+          <h4>20</h4>
+          <p>Enseignants</p>
+        </div>
+        <div class="banner__card">
+          <h4>10</h4>
+          <p>Médias</p>
+        </div>
+        <div class="banner__card">
+          <h4>20</h4>
+          <p>Experts et industries</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section__container workshops__container" id="workshops">
+      <h2 class="section__header" >Workshops et Ateliers</h2>
+      <p class="section__description">
+        Des sessions animées par des experts pour approfondir vos connaissances et compétences en IoT.
+      </p>
+      <div class="workshops__grid">
+        <div class="workshops__card">
+          <span><i class="ri-heart-pulse-line"></i></span>
+          <h4>E-HEALTH & IOT</h4>
+          <p>Assuré par NOCCS</p>
+        </div>
+        <div class="workshops__card">
+          <span><i class="ri-database-2-line"></i></span>
+          <h4>DATA SCIENCE</h4>
+          <p>Assuré par InstaDeep</p>
+        </div>
+        <div class="workshops__card">
+          <span><i class="ri-chat-3-line"></i></span>
+          <h4>CHATBOT</h4>
+          <p>Assuré par SOFIA</p>
+        </div>
+        <div class="workshops__card">
+          <span><i class="ri-cpu-line"></i></span>
+          <h4>AI & INDUSTRY 4.0</h4>
+          <p>Assuré par DATAVORA</p>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">ENISo IoT Challenge</a>
+          </div>
+          <p>
+            L'ENISo IoT Challenge est un événement annuel organisé par l'École Nationale d'Ingénieurs de Sousse pour promouvoir l'innovation et la créativité dans le domaine de l'Internet des Objets.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.facebook.com/enisoiotchallenge"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/orangetechclubeniso?igsh=MXRmMXM4YjVvOHkyOQ=="><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/orange-tech-club-eniso/"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Liens Rapides</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#package">À Propos</a></li>
+            <li><a href="#editions">Éditions</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-line"></i></span> eniso.iot.challenge@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-line"></i></span> +216 25 316 630
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-line"></i></span> ENISo, Sousse, Tunisie
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.166340734548!2d10.590515375304642!3d35.820394322317554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8aeb930217f1%3A0x26a65273b05b6eff!2sEcole%20Nationale%20d&#39;Ing%C3%A9nieurs%20de%20Sousse!5e0!3m2!1sfr!2stn!4v1738443799281!5m2!1sfr!2stn" width="350" height="250" style="border: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+     
+      <div class="footer__bar">
+        Copyright © 2024 ENISo IoT Challenge. Tous droits réservés.
+      </div>
+    </footer>
+    <script>
+      function openGoogleForm() {
+          window.open("https://docs.google.com/forms/d/TON_ID_DU_FORMULAIRE/viewform", "_blank");
+      }
+      </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
