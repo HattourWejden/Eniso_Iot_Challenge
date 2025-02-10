@@ -200,9 +200,9 @@ header::before {
   text-align: center;
 }
 .header__image img {
-  width: 50%; /* Réduit la largeur à 50% de sa taille d'origine */
+  width: 40%; /* Réduit la largeur à 50% de sa taille d'origine */
   height: auto; /* Garde les proportions de l'image */
-  max-width: 800px; /* Taille maximale pour éviter une image trop grande */
+  max-width: 1000px; /* Taille maximale pour éviter une image trop grande */
 }
 
 

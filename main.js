@@ -60,7 +60,7 @@ ScrollReveal().reveal(".banner__card", {
   ...scrollRevealOption,
   interval: 500,
 });
-function openGoogleForm() {
-  window.open("https://docs.google.com/forms/d/e/1FAIpQLScQ9mfvgbdUmYAQU9KCCgyN8c7q2je8e5uCTelZ-1WCR4b4vQ/viewform", "_blank");
-}
+//function openGoogleForm() {
+ // window.open("https://docs.google.com/forms/d/e/1FAIpQLScQ9mfvgbdUmYAQU9KCCgyN8c7q2je8e5uCTelZ-1WCR4b4vQ/viewform", "_blank");
+//}
 
