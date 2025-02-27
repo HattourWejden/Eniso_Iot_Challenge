@@ -737,6 +737,12 @@ footer {
   }
 }
 
+.eniso-logo {
+  width: 50px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+  margin-left: 10px; /* Espacement entre le texte et le logo */
+  vertical-align: middle; /* Aligner verticalement le logo avec le texte */
+}
 @media (width > 1200px) {
   .header__content {
     padding-inline: 1rem 0;
