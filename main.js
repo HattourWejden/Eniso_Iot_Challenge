@@ -2,17 +2,23 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-menuBtn.addEventListener("click", (e) => {
+// Toggle menu on button click
+menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 
+  // Changer l'icône du menu
   const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+  menuBtnIcon.className = isOpen ? "ri-close-line" : "ri-menu-line";
 });
 
+// Fermer le menu quand on clique sur un lien
 navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
+  if (e.target.tagName === "A") {
+    navLinks.classList.remove("open");
+    menuBtnIcon.className = "ri-menu-line";
+  }
 });
+
 
 const scrollRevealOption = {
   origin: "bottom",
@@ -20,10 +26,10 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-ScrollReveal().reveal(".header__image img", {
+/*ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "right",
-});
+});*/
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
   delay: 500,

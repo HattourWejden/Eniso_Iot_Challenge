@@ -51,7 +51,7 @@
 }
 
 .btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--text-dark);
 }
 
 .logo {
@@ -97,7 +97,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .nav__logo {
@@ -107,13 +107,13 @@ nav {
 }
 
 .logo-img {
-  height: 40px; /* Ajuste la taille du logo */
+  height: 50px; /* Ajuste la taille du logo */
   width: auto;
   order: 0; }
 
 .nav__menu__btn {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--text-dark);
   cursor: pointer;
 }
 
@@ -129,8 +129,8 @@ nav {
   flex-direction: column;
   gap: 2rem;
   background-color: var(--primary-color);
-  transition: transform 0.5s;
-  z-index: -1;
+  /*transition: transform 0.5s;*/
+  z-index: -2;
 }
 
 .nav__links.open {
@@ -221,16 +221,14 @@ header::before {
   padding: 9px 13px;
   font-size: 1.5rem;
   color: var(--primary-color);
-  background-color: var(--white);
+  background-color: var(--text-dark);
   border-radius: 100%;
 }
 
 .header__btns a:hover {
-  color: var(--white);
+  color: var(--text-dark);
   background-color: var(--primary-color);
 }
-
-
 
 .partners__container {
   padding: 4rem 1rem;
@@ -260,8 +258,8 @@ header::before {
 }
 
 .partner-logo {
-  width: 150px; 
-  height: auto;
+  width: auto; 
+  height: 110px;
   margin-bottom: 1rem;
 }
 .section__container {
@@ -652,6 +650,7 @@ footer {
 
   .nav__links a {
     color: var(--text-dark);
+    size: 0cm;
   }
 
   .nav__links a:hover {
@@ -737,12 +736,35 @@ footer {
   }
 }
 
+.nav__logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 .eniso-logo {
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: auto;
+  width: 65px; /* Ajustez la taille selon vos besoins */
+  height: 75px;
   margin-left: 10px; /* Espacement entre le texte et le logo */
   vertical-align: middle; /* Aligner verticalement le logo avec le texte */
 }
+.université-logo {
+  width: 100px; /* Ajuste la taille du logo université */
+  height: auto;
+}
+
+
+
+/* Cacher les images sur petits écrans */
+@media (max-width: 768px) {
+  .nav__logos {
+    display: none;
+  }
+}
+
+
+
 @media (width > 1200px) {
   .header__content {
     padding-inline: 1rem 0;
