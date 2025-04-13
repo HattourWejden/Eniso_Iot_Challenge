@@ -69,4 +69,15 @@ ScrollReveal().reveal(".banner__card", {
 //function openGoogleForm() {
  // window.open("https://docs.google.com/forms/d/e/1FAIpQLScQ9mfvgbdUmYAQU9KCCgyN8c7q2je8e5uCTelZ-1WCR4b4vQ/viewform", "_blank");
 //}
-
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.slider__track');
+  const slides = document.querySelectorAll('.slider__track img');
+  let currentSlide = 0;
+  
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+  
+  setInterval(nextSlide, 3000); // Change toutes les 3 secondes
+});
